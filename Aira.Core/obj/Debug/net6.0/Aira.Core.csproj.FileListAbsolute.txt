@@ -1,0 +1,17 @@
+D:\Dev\AiraApi\AiraApi\Aira.Core\bin\Debug\net6.0\Aira.Core.deps.json
+D:\Dev\AiraApi\AiraApi\Aira.Core\bin\Debug\net6.0\Aira.Core.runtimeconfig.json
+D:\Dev\AiraApi\AiraApi\Aira.Core\bin\Debug\net6.0\Aira.Core.dll
+D:\Dev\AiraApi\AiraApi\Aira.Core\bin\Debug\net6.0\Aira.Core.pdb
+D:\Dev\AiraApi\AiraApi\Aira.Core\bin\Debug\net6.0\Aira.Persistence.dll
+D:\Dev\AiraApi\AiraApi\Aira.Core\bin\Debug\net6.0\Aira.Persistence.pdb
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\Aira.Core.csproj.AssemblyReference.cache
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\Aira.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\Aira.Core.AssemblyInfoInputs.cache
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\Aira.Core.AssemblyInfo.cs
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\Aira.Core.csproj.CoreCompileInputs.cache
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\Aira.Core.csproj.CopyComplete
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\Aira.Core.dll
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\refint\Aira.Core.dll
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\Aira.Core.pdb
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\Aira.Core.genruntimeconfig.cache
+D:\Dev\AiraApi\AiraApi\Aira.Core\obj\Debug\net6.0\ref\Aira.Core.dll

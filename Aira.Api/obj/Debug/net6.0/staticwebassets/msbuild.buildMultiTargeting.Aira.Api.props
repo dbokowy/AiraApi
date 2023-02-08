@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Aira.Api.props" />
+</Project>

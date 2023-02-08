@@ -1,0 +1,57 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "AiraContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Aira",
+   "OutputPath": "Aira\/Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Aira.Persistence",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[job_offer]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[job_offer_additional_info]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[job_offer_content]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[job_offer_content_education]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[job_offer_main]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "LAPTOP-0E7KGHR7\\SQLEXPRESS.Aira",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
