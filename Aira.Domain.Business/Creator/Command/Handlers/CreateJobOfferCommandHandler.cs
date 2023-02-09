@@ -24,7 +24,7 @@ namespace Aira.Domain.Business.Creator.Command
             var jobOffer = _mapper.Map<CreateJobOfferCommand, JobOffer>(command);
             jobOffer.JobOfferId = jobOfferId;
             jobOffer.CreatedAt = DateTime.UtcNow;
-            jobOffer.UserId = Guid.Empty;//TODO add when UserId addded to header
+            jobOffer.UserId = Guid.Empty;
             await _jobOfferUnitOfWork.JobOfferRepository.Insert(jobOffer);
 
             await _jobOfferUnitOfWork.Save();

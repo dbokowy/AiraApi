@@ -1,5 +1,0 @@
-D:\Dev\AiraApi\AiraApi\Aira.Application\obj\Debug\net6.0\Aira.Domain.Business.csproj.AssemblyReference.cache
-D:\Dev\AiraApi\AiraApi\Aira.Application\obj\Debug\net6.0\Aira.Domain.Business.GeneratedMSBuildEditorConfig.editorconfig
-D:\Dev\AiraApi\AiraApi\Aira.Application\obj\Debug\net6.0\Aira.Domain.Business.AssemblyInfoInputs.cache
-D:\Dev\AiraApi\AiraApi\Aira.Application\obj\Debug\net6.0\Aira.Domain.Business.AssemblyInfo.cs
-D:\Dev\AiraApi\AiraApi\Aira.Application\obj\Debug\net6.0\Aira.Domain.Business.csproj.CoreCompileInputs.cache
