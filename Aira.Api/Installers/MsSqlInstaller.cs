@@ -9,7 +9,11 @@ namespace Aira.Api.Installers
     {
         public static void AddDbContexts(this IServiceCollection services, IConfiguration configuration)
         {
+#if DEBUG
+            services.AddDbContext<AiraContext>(options => options.UseSqlite(configuration.GetConnectionString("MsSql.Aira")));
+#else
             services.AddDbContext<AiraContext>(options => options.UseSqlServer(configuration.GetConnectionString("MsSql.Aira")));
+#endif
         }
     }
 }

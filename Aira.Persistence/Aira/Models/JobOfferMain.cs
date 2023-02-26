@@ -14,14 +14,14 @@ namespace Aira.Persistence.Aira.Models
         public string SalaryType { get; set; }
         public decimal? SalaryFrom { get; set; }
         public decimal? SalaryTo { get; set; }
-        public DateTime? SalaryTime { get; set; }
-        public string LocationCountry { get; set; }
-        public string LocationCity { get; set; }
-        public string LocationVoivodeship { get; set; }
-        public string LocationDetails { get; set; }
-        public string WorkingModel { get; set; }
+        public string SalaryTime { get; set; }
+        public string AddressCountry { get; set; }
+        public string AddressCity { get; set; }
+        public string AddressVoivodeship { get; set; }
+        public string AddressStreet { get; set; }
+        public string WorkModel { get; set; }
         public string ContractType { get; set; }
-        public string WorkingTime { get; set; }
+        public string WorkMode { get; set; }
         public string RecruitmentMode { get; set; }
         public byte? VacancyNumber { get; set; }
     }

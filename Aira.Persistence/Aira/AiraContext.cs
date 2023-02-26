@@ -182,21 +182,21 @@ namespace Aira.Persistence.Aira
                     .HasMaxLength(30)
                     .HasColumnName("contract_type");
 
-                entity.Property(e => e.LocationCity)
+                entity.Property(e => e.AddressCity)
                     .HasMaxLength(50)
-                    .HasColumnName("location_city");
+                    .HasColumnName("address_city");
 
-                entity.Property(e => e.LocationCountry)
+                entity.Property(e => e.AddressCountry)
                     .HasMaxLength(50)
-                    .HasColumnName("location_country");
+                    .HasColumnName("address_country");
 
-                entity.Property(e => e.LocationDetails)
+                entity.Property(e => e.AddressStreet)
                     .HasMaxLength(50)
-                    .HasColumnName("location_details");
+                    .HasColumnName("address_street");
 
-                entity.Property(e => e.LocationVoivodeship)
+                entity.Property(e => e.AddressVoivodeship)
                     .HasMaxLength(50)
-                    .HasColumnName("location_voivodeship");
+                    .HasColumnName("address_voivodeship");
 
                 entity.Property(e => e.RecruitmentMode)
                     .HasMaxLength(30)
@@ -207,7 +207,7 @@ namespace Aira.Persistence.Aira
                     .HasColumnName("salary_from");
 
                 entity.Property(e => e.SalaryTime)
-                    .HasColumnType("datetime")
+                    .HasMaxLength(30)
                     .HasColumnName("salary_time");
 
                 entity.Property(e => e.SalaryTo)
@@ -220,13 +220,13 @@ namespace Aira.Persistence.Aira
 
                 entity.Property(e => e.VacancyNumber).HasColumnName("vacancy_number");
 
-                entity.Property(e => e.WorkingModel)
+                entity.Property(e => e.WorkModel)
                     .HasMaxLength(30)
-                    .HasColumnName("working_model");
+                    .HasColumnName("work_model");
 
-                entity.Property(e => e.WorkingTime)
+                entity.Property(e => e.WorkMode)
                     .HasMaxLength(30)
-                    .HasColumnName("working_time");
+                    .HasColumnName("work_mode");
             });
 
             OnModelCreatingPartial(modelBuilder);
