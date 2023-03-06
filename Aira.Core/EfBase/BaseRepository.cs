@@ -18,7 +18,7 @@ namespace Aira.Core.Repository
         {
             return await table.ToListAsync();
         }
-        public async Task<T> GetById(object id)
+        public async Task<T> GetById(Guid id)
         {
             return await table.FindAsync(id);
         }
@@ -31,7 +31,7 @@ namespace Aira.Core.Repository
             table.Attach(obj);
             _context.Entry(obj).State = EntityState.Modified;
         }
-        public async Task Delete(object id)
+        public async Task Delete(Guid id)
         {
             T existing = await table.FindAsync(id);
             table.Remove(existing);

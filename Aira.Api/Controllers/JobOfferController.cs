@@ -8,6 +8,7 @@ using Aira.Domain.Business.Creator.Command;
 using MediatR;
 using Aira.Domain.Business.Creator.Queries;
 using Microsoft.AspNetCore.Cors;
+using Aira.Domain.Business.Creator.Dto;
 
 namespace Aira.Api.Controllers
 {
@@ -27,7 +28,7 @@ namespace Aira.Api.Controllers
         [HttpPost]
         [Produces(MediaTypeNames.Application.Json)]
         [Consumes(MediaTypeNames.Application.Json)]
-        [ProducesResponseType(typeof(object), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(Guid), (int)HttpStatusCode.OK)]
         [SwaggerOperation(OperationId = nameof(Create))]
         public async Task<IActionResult> Create([FromBody] CreateJobOfferCommand request)
         {
@@ -59,7 +60,7 @@ namespace Aira.Api.Controllers
 
         [HttpGet("{jobOfferId:Guid}")]
         [Produces(MediaTypeNames.Application.Json)]
-        [ProducesResponseType(typeof(object), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(JobOfferDto), (int)HttpStatusCode.OK)]
         [SwaggerOperation(OperationId = nameof(Get))]
         public async Task<IActionResult> Get(Guid jobOfferId)
         {

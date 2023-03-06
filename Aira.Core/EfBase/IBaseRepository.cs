@@ -9,9 +9,9 @@ namespace Aira.Core.Repository.Interface
     public interface IBaseRepository<T> where T : class
     {
         Task<IEnumerable<T>> GetAll();
-        Task<T> GetById(object id);
+        Task<T> GetById(Guid id);
         Task Insert(T obj);
         Task Update(T obj);
-        Task Delete(object id);
+        Task Delete(Guid id);
     }
 }
