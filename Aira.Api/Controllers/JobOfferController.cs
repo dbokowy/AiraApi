@@ -67,5 +67,16 @@ namespace Aira.Api.Controllers
             var response = await _mediator.Send(new GetJobOfferQuery() { JobOfferId = jobOfferId });
             return Ok(response);
         }
+
+        [HttpGet("List")]
+        [Produces(MediaTypeNames.Application.Json)]
+        [ProducesResponseType(typeof(List<JobOfferDto>), (int)HttpStatusCode.OK)]
+        [SwaggerOperation(OperationId = nameof(List))]
+        public async Task<IActionResult> List()
+        {
+            //TODO::brac id z naglowka
+            var response = await _mediator.Send(new GetJobOfferListQuery(){});
+            return Ok(response);
+        }
     }
 }
