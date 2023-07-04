@@ -218,6 +218,10 @@ namespace Aira.Persistence.Aira
                     .HasMaxLength(30)
                     .HasColumnName("salary_type");
 
+                entity.Property(e => e.SalaryCurrency)
+                    .HasMaxLength(30)
+                    .HasColumnName("salary_currency");
+
                 entity.Property(e => e.VacancyNumber).HasColumnName("vacancy_number");
 
                 entity.Property(e => e.WorkModel)

@@ -34,7 +34,8 @@ namespace Aira.Domain.Business.Creator.Command
             await _jobOfferUnitOfWork.JobOfferMainRepository.Insert(jobOfferMain);
 
             await _jobOfferUnitOfWork.Save();
-
+            //TODO:: add virtual records with only jobOfferId in all jobOffer  tables 
+            
             await _jobOfferUnitOfWork.Commit();
 
             return jobOfferId;

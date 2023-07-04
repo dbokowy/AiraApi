@@ -9,7 +9,7 @@ namespace Aira.Domain.Business.Creator.Command
         public string PositionName { get; set; }
         public string CompanyName { get; set; }
         public string CompanyDescription { get; set; }
-        public string CompanyLogo { get; set; } //TODO :: do usuniecia
+        //public string CompanyLogo { get; set; } //TODO :: do usuniecia
         public string SalaryType { get; set; }
         public decimal? SalaryFrom { get; set; }
         public decimal? SalaryTo { get; set; }

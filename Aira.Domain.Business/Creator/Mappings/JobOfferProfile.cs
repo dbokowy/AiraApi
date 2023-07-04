@@ -11,15 +11,12 @@ namespace Aira.Domain.Business.Creator.Mappings
         public JobOfferProfile()
         {
             CreateMap<CreateJobOfferCommand, JobOffer>();
-            CreateMap<CreateJobOfferCommand, JobOfferMain>()
-                .ForMember(x => x.CompanyLogo, o => o.MapFrom( s => Convert.FromBase64String(s.CompanyLogo)));
+            CreateMap<CreateJobOfferCommand, JobOfferMain>();
 
-            CreateMap<UpdateJobOfferCommand, JobOfferMain>()
-                .ForMember(x => x.CompanyLogo, o => o.MapFrom(s => Convert.FromBase64String(s.CompanyLogo)));
+            CreateMap<UpdateJobOfferCommand, JobOfferMain>();
 
             CreateMap<JobOffer, JobOfferDto>();
-            CreateMap<JobOfferMain, JobOfferDto>()
-                .ForMember(x => x.CompanyLogo, o => o.MapFrom(s => Convert.ToBase64String(s.CompanyLogo)));
+            CreateMap<JobOfferMain, JobOfferDto>();
         }
     }
 }

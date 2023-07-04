@@ -12,6 +12,7 @@ namespace Aira.Persistence.Aira.Models
         public string CompanyDescription { get; set; }
         public byte[] CompanyLogo { get; set; }
         public string SalaryType { get; set; }
+        public string SalaryCurrency { get; set; }
         public decimal? SalaryFrom { get; set; }
         public decimal? SalaryTo { get; set; }
         public string SalaryTime { get; set; }

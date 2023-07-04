@@ -29,8 +29,9 @@ namespace Aira.Domain.Business.Creator.Queries.Handlers
             jobOfferListDto.ForEach(o => {
                     var jobOffer = jobOfferMainListDto.FirstOrDefault(p => o.JobOfferId == p.JobOfferId);
 
+                if(jobOffer != null) { 
                     o.SalaryFrom = jobOffer.SalaryFrom;
-                    //o.SalaryCurrency = jobOffer.SalaryCurrency;
+                    o.SalaryCurrency = jobOffer.SalaryCurrency;
                     o.SalaryTime = jobOffer.SalaryTime;
                     o.SalaryTo = jobOffer.SalaryTo;
                     o.SalaryType = jobOffer.SalaryType;
@@ -46,6 +47,7 @@ namespace Aira.Domain.Business.Creator.Queries.Handlers
                     o.WorkModel = jobOffer.WorkModel;
                     o.VacancyNumber = jobOffer.VacancyNumber;
                 }
+            }
             );
 
             return jobOfferListDto;

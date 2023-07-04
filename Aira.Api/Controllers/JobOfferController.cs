@@ -47,7 +47,7 @@ namespace Aira.Api.Controllers
             return Ok(response);
         }
 
-        [HttpPut("CompanyLogo")]
+        [HttpPut("CompanyLogo/{jobOfferId:Guid}")]
         [Produces(MediaTypeNames.Application.Json)]
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(typeof(object), (int)HttpStatusCode.OK)]
