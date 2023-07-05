@@ -29,6 +29,12 @@ namespace Aira.Domain.Business.Creator.Mappings
 
             CreateMap<JobOfferContent, JobOfferContentDto>();
             CreateMap<JobOfferContentEducation, JobOfferContentDto>();
+
+
+            CreateMap<CreateJobOfferAdditionalInfoCommand, JobOfferAdditionalInfo>();
+            CreateMap<UpdateJobOfferAdditionalInfoCommand, JobOfferAdditionalInfo>();
+
+            CreateMap<JobOfferAdditionalInfo, JobOfferAdditionalInfoDto>();
         }
     }
 }

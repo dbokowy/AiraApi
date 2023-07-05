@@ -23,6 +23,7 @@ namespace Aira.Domain.Business.Creator.Command
             jobOffer.Name = command.Name;
             jobOffer.PositionName = command.PositionName;
             await _jobOfferUnitOfWork.JobOfferRepository.Update(jobOffer);
+            await _jobOfferUnitOfWork.Save();
 
             var jobOfferMain = await _jobOfferUnitOfWork.JobOfferMainRepository.GetById(command.JobOfferId);
             var jobOfferMainUpdated = _mapper.Map<UpdateJobOfferCommand, JobOfferMain>(command, jobOfferMain);

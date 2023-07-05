@@ -19,10 +19,10 @@ namespace Aira.Domain.Business.Creator.Queries.Handlers
 
         public async Task<JobOfferContentDto> Handle(GetJobOfferContentQuery request, CancellationToken cancellationToken)
         {
-            var jobOffer = await _jobOfferUnitOfWork.JobOfferContentRepository.GetById(request.JobOfferId);
-            var jobOfferDto = _mapper.Map<JobOfferContent, JobOfferContentDto>(jobOffer);
-            var jobOfferMain = await _jobOfferUnitOfWork.JobOfferContentEducationRepository.GetById(request.JobOfferId);
-            return _mapper.Map<JobOfferContentEducation, JobOfferContentDto>(jobOfferMain, jobOfferDto);
+            var jobOfferContent = await _jobOfferUnitOfWork.JobOfferContentRepository.GetById(request.JobOfferId);
+            var jobOfferContentDto = _mapper.Map<JobOfferContent, JobOfferContentDto>(jobOfferContent);
+            var jobOfferContentEducationDto = await _jobOfferUnitOfWork.JobOfferContentEducationRepository.GetById(request.JobOfferId);
+            return _mapper.Map<JobOfferContentEducation, JobOfferContentDto>(jobOfferContentEducationDto, jobOfferContentDto);
         }
     }
 }
