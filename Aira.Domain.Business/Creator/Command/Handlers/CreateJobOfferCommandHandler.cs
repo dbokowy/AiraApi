@@ -27,8 +27,6 @@ namespace Aira.Domain.Business.Creator.Command
             jobOffer.UserId = Guid.Empty;
             await _jobOfferUnitOfWork.JobOfferRepository.Insert(jobOffer);
 
-            await _jobOfferUnitOfWork.Save();
-
             var jobOfferMain = _mapper.Map<CreateJobOfferCommand, JobOfferMain>(command);
             jobOfferMain.JobOfferId = jobOfferId;
             await _jobOfferUnitOfWork.JobOfferMainRepository.Insert(jobOfferMain);

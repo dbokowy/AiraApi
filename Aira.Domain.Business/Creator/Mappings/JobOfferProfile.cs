@@ -2,6 +2,7 @@
 using Aira.Domain.Business.Creator.Dto;
 using Aira.Persistence.Aira.Models;
 using AutoMapper;
+using Azure.Core;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Aira.Domain.Business.Creator.Mappings
@@ -17,6 +18,17 @@ namespace Aira.Domain.Business.Creator.Mappings
 
             CreateMap<JobOffer, JobOfferDto>();
             CreateMap<JobOfferMain, JobOfferDto>();
+
+
+
+            CreateMap<CreateJobOfferContentCommand, JobOfferContent>();
+            CreateMap<CreateJobOfferContentCommand, JobOfferContentEducation>();
+
+            CreateMap<UpdateJobOfferContentCommand, JobOfferContent>();
+            CreateMap<UpdateJobOfferContentCommand, JobOfferContentEducation>();
+
+            CreateMap<JobOfferContent, JobOfferContentDto>();
+            CreateMap<JobOfferContentEducation, JobOfferContentDto>();
         }
     }
 }

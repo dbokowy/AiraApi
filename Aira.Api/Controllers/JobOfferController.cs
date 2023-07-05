@@ -78,5 +78,6 @@ namespace Aira.Api.Controllers
             var response = await _mediator.Send(new GetJobOfferListQuery(){});
             return Ok(response);
         }
+
     }
 }

@@ -7,10 +7,10 @@ namespace Aira.Persistence.Aira.Models
 {
     public partial class JobOfferContent
     {
+        public Guid JobOfferId { get; set; }
         public string Responsibilities { get; set; }
         public string Requirements { get; set; }
         public string Benefits { get; set; }
         public string OurOffer { get; set; }
-        public Guid JobOfferId { get; set; }
     }
 }
