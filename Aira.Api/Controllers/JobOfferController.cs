@@ -47,17 +47,6 @@ namespace Aira.Api.Controllers
             return Ok(response);
         }
 
-        [HttpPut("CompanyLogo/{jobOfferId:Guid}")]
-        [Produces(MediaTypeNames.Application.Json)]
-        [Consumes(MediaTypeNames.Application.Json)]
-        [ProducesResponseType(typeof(object), (int)HttpStatusCode.OK)]
-        [SwaggerOperation(OperationId = nameof(UpdateCompanyLogo))]
-        public async Task<IActionResult> UpdateCompanyLogo([FromForm] UpdateJobOfferCompanyLogoCommand request)
-        {
-            var response = await _mediator.Send(request);
-            return Ok(response);
-        }
-
         [HttpGet("{jobOfferId:Guid}")]
         [Produces(MediaTypeNames.Application.Json)]
         [ProducesResponseType(typeof(JobOfferDto), (int)HttpStatusCode.OK)]
